@@ -9,7 +9,7 @@ tar zxvf ~/vsts-agent-linux-x64-2.211.1.tar.gz
 ./config.sh --unattended \
         --url https://dev.azure.com/likeabossmitko \
         --auth pat \
-        --token pnpm3mqumktbt7lteoaxx4knzmaxnvxhno7c6du3imcpjatt7k3a \
+        --token <PAT> \
         --pool RHELpool \
         --agent rhelpool03
 sudo ./svc.sh install
