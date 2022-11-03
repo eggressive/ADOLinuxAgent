@@ -10,5 +10,5 @@ tar zxvf ~/vsts-agent-linux-x64-2.211.1.tar.gz
 	--auth pat \
 	--token pnpm3mqumktbt7lteoaxx4knzmaxnvxhno7c6du3imcpjatt7k3a \
 	--pool RHELpool \
-	--agent rhelpool01
+	--agent rhelpool02
 	--acceptTeeEula
