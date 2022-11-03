@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #ADO Linux agent RHEL8
 
 sudo dnf -y install wget git
