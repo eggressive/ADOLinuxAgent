@@ -1,7 +1,7 @@
 #!/bin/bash
 #ADO Linux agent RHEL8
 
-sudo dnf -y install wget 
+sudo dnf -y install wget git
 wget https://vstsagentpackage.azureedge.net/agent/2.211.1/vsts-agent-linux-x64-2.211.1.tar.gz
 mkdir myagent && cd myagent
 tar zxvf ~/vsts-agent-linux-x64-2.211.1.tar.gz
