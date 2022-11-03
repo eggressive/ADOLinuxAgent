@@ -1,7 +1,8 @@
-#!/bin/sh
-#ADO Linux agent RHEL8
+#!/bin/bash
+# ADO Linux agent RHEL8
+# https://github.com/eggressive/ADOLinuxAgent.git
 
-sudo dnf -y install wget git
+dnf -y install wget git
 wget https://vstsagentpackage.azureedge.net/agent/2.211.1/vsts-agent-linux-x64-2.211.1.tar.gz
 mkdir myagent && cd myagent
 tar zxvf ~/vsts-agent-linux-x64-2.211.1.tar.gz
@@ -10,5 +11,6 @@ tar zxvf ~/vsts-agent-linux-x64-2.211.1.tar.gz
 	--auth pat \
 	--token pnpm3mqumktbt7lteoaxx4knzmaxnvxhno7c6du3imcpjatt7k3a \
 	--pool RHELpool \
-	--agent rhelpool02
-	--acceptTeeEula
+	--agent rhelpool03
+./svc.sh install
+./svc.sh start
